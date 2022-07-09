@@ -23,6 +23,20 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <form id="search-form">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  type="search"
+                  placeholder="Search for city..."
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3">
+                <input type="submit" value="Search" />
+              </div>
+            </div>
+          </form>
           <div class="overview">
             <h1 id="city"></h1>
             <ul>
@@ -33,12 +47,7 @@
           <div class="row">
             <div class="col-6">
               <div class="clearfix weather-temperature">
-                <img
-                  src="http://openweathermap.org/img/wn/04d@2x.png"
-                  alt="Clear"
-                  id="icon"
-                  class="float-left"
-                />
+                <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
                   <strong id="temperature"></strong
                   ><span class="units">ºC | <a href="#">ºF</a></span>
