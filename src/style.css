@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: #878787;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 100px;
   line-height: 28px;
@@ -17,7 +17,7 @@ ul {
 
 li {
   list-style: none;
-  color: rgb(135, 135, 135);
+  color: rgb(255, 255, 255);
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -37,6 +37,16 @@ li:first-letter {
   padding: 20px;
   border: 1px solid #dadde1;
   border-radius: 5px;
+  background-image: linear-gradient(
+    to bottom,
+    #ffd853,
+    #fdb96e,
+    #feb077,
+    #ff9590,
+    #ff7ea4,
+    #ff67bd,
+    #da59b6
+  );
 }
 
 .overview {
@@ -50,7 +60,7 @@ li:first-letter {
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
+  color: rgb(255, 255, 255);
   font-size: 64px;
   line-height: 1;
   font-weight: 400;
@@ -60,16 +70,7 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -34px;
-}
-
-.weather-temperature .active {
-  color: rgb(33, 33, 33);
-  cursor: default;
-  text-decoration: none;
-}
-
-.weather-temperature .active:hover {
-  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
 small {
@@ -82,8 +83,14 @@ small {
   margin-top: 20px;
 }
 
-.btn {
+.btn-primary {
   margin-top: 20px;
+  background-color: #da59b6 !important;
+  border-color: #da59b6 !important;
+}
+.btn:hover {
+  background-color: #ff7ea4 !important;
+  transition: 0.4s;
 }
 
 .elements {
@@ -93,17 +100,18 @@ small {
 hr {
   margin-top: 30px;
   margin-bottom: 30px;
+  color: #ffd853;
 }
 
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 .weather-forecast-date {
   font-size: 16px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .weather-forecast-temperature-min {
@@ -112,4 +120,17 @@ hr {
 
 .weather-forecast-temperatures {
   font: 13px;
+}
+
+.links {
+  color: #ffffff;
+}
+
+.github {
+  color: #ffd853;
+  text-decoration: none;
+}
+
+.github:hover {
+  color: #ff9590;
 }
